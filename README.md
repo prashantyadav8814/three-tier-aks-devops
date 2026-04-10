@@ -1,20 +1,25 @@
 ⭐ If you like this project, give it a star!
 
-# 🚀 Three-Tier DevOps Project (AKS + Docker + CI/CD)
+<h1 align="center">🚀 Three-Tier DevOps Project</h1>
+<h3 align="center">AKS • Docker • Kubernetes • CI/CD • Azure</h3>
 
-![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)
-![Docker](https://img.shields.io/badge/Container-Docker-blue)
-![Kubernetes](https://img.shields.io/badge/Orchestration-Kubernetes-blue)
-![Azure](https://img.shields.io/badge/Cloud-Azure-blue)
-![Status](https://img.shields.io/badge/Build-Passing-brightgreen)
+<p align="center">
+  <img src="https://img.shields.io/github/actions/workflow/status/prashantyadav8814/three-tier-aks-devops/deploy.yml?branch=main&label=CI/CD&style=for-the-badge" />
+  <img src="https://img.shields.io/docker/pulls/prashantyadav8814/frontend?style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/prashantyadav8814/three-tier-aks-devops?style=for-the-badge" />
+  <img src="https://komarev.com/ghpvc/?username=prashantyadav8814&repo=three-tier-aks-devops&style=for-the-badge" />
+</p>
 
 ---
 
 ## 📌 Project Overview
 
-This project demonstrates a **production-ready three-tier architecture** deployed on **Azure Kubernetes Service (AKS)** using modern DevOps practices.
+A **production-ready three-tier architecture** deployed on **Azure Kubernetes Service (AKS)** using modern DevOps practices.
 
-It includes a **React frontend**, **Flask backend**, and is fully containerized using **Docker** with automated deployment via **GitHub Actions CI/CD pipeline**.
+🔹 React frontend (served via Nginx)  
+🔹 Flask backend (REST API)  
+🔹 Fully containerized using Docker  
+🔹 Automated CI/CD using GitHub Actions
 
 ---
 
@@ -23,13 +28,17 @@ It includes a **React frontend**, **Flask backend**, and is fully containerized 
 👉 Frontend: http://4.247.192.166  
 👉 Backend: http://20.219.240.243:5000  
 
-![App Demo](./assets/demo.gif)
+<p align="center">
+  <img src="./assets/demo.gif" width="800"/>
+</p>
 
 ---
 
 ## 🏗️ Architecture Diagram
 
-![Architecture](./assets/architecture.png)
+<p align="center">
+  <img src="./assets/architecture.png" width="900"/>
+</p>
 
 ---
 
@@ -45,12 +54,9 @@ It includes a **React frontend**, **Flask backend**, and is fully containerized 
 
 ## ⚙️ Tech Stack
 
-- React.js  
-- Flask (Python)  
-- Docker  
-- Kubernetes (AKS)  
-- GitHub Actions  
-- Azure Cloud  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,python,docker,kubernetes,github,azure" />
+</p>
 
 ---
 
@@ -62,13 +68,14 @@ three-tier-aks-devops/
 ├── backend/               
 ├── k8s/                   
 ├── .github/workflows/     
-├── assets/                # Images & GIFs
+├── assets/                
 └── README.md
 ```
 
 ---
 
 ## ☁️ Deployment (AKS)
+
 - Created AKS cluster using Azure CLI
 - Deployed applications using Kubernetes Deployments
 - Exposed services using LoadBalancer
@@ -77,33 +84,31 @@ three-tier-aks-devops/
 ---
 
 ## 🔄 CI/CD Pipeline
-Automated using GitHub Actions:
 
-- Build Docker images
-- Push to Docker Hub
-- Deploy to AKS
+✔️ Build Docker images
+✔️ Push to Docker Hub
+✔️ Deploy to AKS
 
 ---
 
 ## 🚀 Key Features
-- Containerized multi-tier architecture
-- CI/CD pipeline automation
-- Cloud deployment on AKS
-- Scalable microservices-based design
-- Real-world debugging and troubleshooting
+
+- Scalable microservices architecture
+- Automated CI/CD pipeline
+- Cloud-native deployment (AKS)
+- Real-world debugging & troubleshooting
 
 ---
 
 ## 🧠 Key Learnings
-- Dockerizing frontend & backend
-- Kubernetes deployments & services
-- Debugging real-world issues:
+
+- Kubernetes networking & services
+- Debugging:
     - Service port mismatch
-    - CORS errors
-    - Internal vs external networking
+    - CORS issues
     - ImagePullBackOff
-- Azure AKS cluster setup
-- CI/CD pipeline automation
+- CI/CD automation
+- AKS deployment
 
 ---
 
@@ -121,6 +126,7 @@ docker compose up --build
 ---
 
 ## 🐳 Docker Images
+
 - Frontend: https://hub.docker.com/r/prashantyadav8814/frontend
 - Backend: https://hub.docker.com/r/prashantyadav8814/backend
 
@@ -147,9 +153,10 @@ docker compose up --build
 ---
 
 ## 🚧 Future Improvements
-- Ingress Controller (single domain routing)
-- HTTPS with SSL
-- Azure Container Registry (ACR)
+
+- Ingress Controller
+- HTTPS (SSL)
+- Azure Container Registry
 - Monitoring (Prometheus + Grafana)
 
 ---
