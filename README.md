@@ -24,7 +24,8 @@ It includes a **React frontend**, **Flask backend**, and Kubernetes-based infras
 👉 Backend: http://20.219.240.243:5000  
 
 ### 📸 Demo Preview (Add your GIF here)
-![App Demo](https://via.placeholder.com/800x400?text=Add+Your+Project+GIF+Here)
+
+![App Demo](./assets/demo.gif)
 
 👉 Tip: Record using **ScreenToGif / OBS** and upload to repo
 
@@ -32,7 +33,7 @@ It includes a **React frontend**, **Flask backend**, and Kubernetes-based infras
 
 ## 🏗️ Architecture Diagram
 
-![Architecture](https://via.placeholder.com/900x500?text=Three+Tier+Architecture+AKS)
+![Architecture](./assets/architecture.png)
 
 👉 You can create using:
 - draw.io
@@ -87,6 +88,15 @@ Automatically:
 
 ---
 
+## 🚀 Key Features
+- Fully containerized multi-tier application  
+- Deployed on Azure Kubernetes Service (AKS)  
+- Automated CI/CD using GitHub Actions  
+- Real-time debugging of production issues  
+- Scalable architecture using Kubernetes services
+
+---
+
 ## 🧠 Key Learnings
 - Dockerizing frontend & backend
 - Kubernetes deployments & services
@@ -105,11 +115,9 @@ Automatically:
 ### Step 1: Clone repository
 git clone https://github.com/prashantyadav8814/three-tier-aks-devops.git
 cd three-tier-aks-devops
-
-### Step 2: Run application
 docker compose up --build
 
-### Step 3: Access application
+### Step 2: Access application
 - Frontend: http://localhost:3000
 - Backend: http://localhost:5000
 
@@ -118,6 +126,26 @@ docker compose up --build
 ## 🐳 Docker Images
 - Frontend: https://hub.docker.com/r/prashantyadav8814/frontend
 - Backend: https://hub.docker.com/r/prashantyadav8814/backend
+
+---
+
+### ❗ Issues Faced & Fixes
+
+1. Frontend not loading via LoadBalancer  
+   - Cause: Service port mismatch (3000 vs 80)  
+   - Fix: Updated Kubernetes Service to use port 80  
+
+2. External IP not accessible  
+   - Cause: Incorrect service configuration  
+   - Fix: Recreated LoadBalancer service  
+
+3. Frontend not calling backend  
+   - Cause: Used `localhost` inside container  
+   - Fix: Replaced with Kubernetes service name (`backend:5000`)  
+
+4. Backend response not visible  
+   - Cause: CORS issue  
+   - Fix: Enabled CORS in Flask backend
 
 ---
 
