@@ -14,20 +14,16 @@
 
 This project demonstrates a **production-ready three-tier architecture** deployed on **Azure Kubernetes Service (AKS)** using modern DevOps practices.
 
-It includes a **React frontend**, **Flask backend**, and Kubernetes-based infrastructure, fully containerized using Docker and automated with CI/CD.
+It includes a **React frontend**, **Flask backend**, and is fully containerized using **Docker** with automated deployment via **GitHub Actions CI/CD pipeline**.
 
 ---
 
-## 🎬 Demo (Live App)
+## 🎬 Live Demo
 
 👉 Frontend: http://4.247.192.166  
 👉 Backend: http://20.219.240.243:5000  
 
-### 📸 Demo Preview (Add your GIF here)
-
 ![App Demo](./assets/demo.gif)
-
-👉 Tip: Record using **ScreenToGif / OBS** and upload to repo
 
 ---
 
@@ -35,38 +31,40 @@ It includes a **React frontend**, **Flask backend**, and Kubernetes-based infras
 
 ![Architecture](./assets/architecture.png)
 
-👉 You can create using:
-- draw.io
-- Excalidraw
-
-
+---
 
 ## 🏗️ Architecture
+
 - **Frontend (UI Layer)**: React.js (served via Nginx)
-- **Backend (API Layer)**: Flask (Python REST API)
-- **Infrastructure Layer**: Azure Kubernetes Service (AKS)
+- **Backend (API Layer)**: Flask REST API
+- **Infrastructure**: Azure Kubernetes Service (AKS)
 - **CI/CD**: GitHub Actions
 - **Containerization**: Docker
 
 ---
 
 ## ⚙️ Tech Stack
-- React.js
-- Flask (Python)
-- Docker
-- Kubernetes (AKS)
-- GitHub Actions (CI/CD)
-- Azure Cloud
+
+- React.js  
+- Flask (Python)  
+- Docker  
+- Kubernetes (AKS)  
+- GitHub Actions  
+- Azure Cloud  
 
 ---
 
 ## 📁 Project Structure
+
+```bash
 three-tier-aks-devops/
-├── frontend/              # React application
-├── backend/               # Flask API
-├── k8s/                   # Kubernetes manifests
-├── .github/workflows/     # CI/CD pipeline
+├── frontend/              
+├── backend/               
+├── k8s/                   
+├── .github/workflows/     
+├── assets/                # Images & GIFs
 └── README.md
+```
 
 ---
 
@@ -79,21 +77,20 @@ three-tier-aks-devops/
 ---
 
 ## 🔄 CI/CD Pipeline
-Implemented using **GitHub Actions**
+Automated using GitHub Actions:
 
-Automatically:
-- Builds Docker images
-- Pushes to Docker Hub
-- Deploys to AKS
+- Build Docker images
+- Push to Docker Hub
+- Deploy to AKS
 
 ---
 
 ## 🚀 Key Features
-- Fully containerized multi-tier application  
-- Deployed on Azure Kubernetes Service (AKS)  
-- Automated CI/CD using GitHub Actions  
-- Real-time debugging of production issues  
-- Scalable architecture using Kubernetes services
+- Containerized multi-tier architecture
+- CI/CD pipeline automation
+- Cloud deployment on AKS
+- Scalable microservices-based design
+- Real-world debugging and troubleshooting
 
 ---
 
