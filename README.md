@@ -4,7 +4,7 @@
 <h3 align="center">AKS • Docker • Kubernetes • CI/CD • Azure</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/github/actions/workflow/status/prashantyadav8814/three-tier-aks-devops/deploy.yml?branch=main&label=CI/CD&style=for-the-badge" />
+  <img src="https://img.shields.io/github/actions/workflow/status/prashantyadav8814/three-tier-aks-devops/ci.yml?branch=main&label=Build&style=for-the-badge" />
   <img src="https://img.shields.io/docker/pulls/prashantyadav8814/frontend?style=for-the-badge" />
   <img src="https://img.shields.io/github/stars/prashantyadav8814/three-tier-aks-devops?style=for-the-badge" />
   <img src="https://komarev.com/ghpvc/?username=prashantyadav8814&repo=three-tier-aks-devops&style=for-the-badge" />
@@ -25,8 +25,12 @@ A **production-ready three-tier architecture** deployed on **Azure Kubernetes Se
 
 ## 🎬 Live Demo
 
-👉 Frontend: http://4.247.192.166  
-👉 Backend: http://20.219.240.243:5000  
+👉 Frontend: http://20.204.242.51  
+👉 Backend: http://20.219.240.243:5000
+
+> ⚠️ Note: External IPs may change if the Kubernetes service is restarted.  
+> Please check latest service IP using:
+> `kubectl get svc`
 
 <p align="center">
   <img src="./assets/demo.gif" width="800"/>
@@ -115,13 +119,17 @@ three-tier-aks-devops/
 ## 🚀 Run Locally
 
 ### Step 1: Clone repository
+```bash
 git clone https://github.com/prashantyadav8814/three-tier-aks-devops.git
 cd three-tier-aks-devops
 docker compose up --build
+```
 
 ### Step 2: Access application
+```bash
 - Frontend: http://localhost:3000
 - Backend: http://localhost:5000
+```
 
 ---
 
