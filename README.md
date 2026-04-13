@@ -4,7 +4,7 @@
 <h3 align="center">AKS • Docker • Kubernetes • CI/CD • Azure</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/github/actions/workflow/status/prashantyadav8814/three-tier-aks-devops/ci.yml?branch=main&label=Build&style=for-the-badge" />
+  <img src="https://img.shields.io/github/actions/workflow/status/prashantyadav8814/three-tier-aks-devops/deploy.yml?branch=main&style=for-the-badge" />
   <img src="https://img.shields.io/docker/pulls/prashantyadav8814/frontend?style=for-the-badge" />
   <img src="https://img.shields.io/github/stars/prashantyadav8814/three-tier-aks-devops?style=for-the-badge" />
   <img src="https://komarev.com/ghpvc/?username=prashantyadav8814&repo=three-tier-aks-devops&style=for-the-badge" />
